@@ -1,0 +1,184 @@
+--begin--
+Info|00:00:541> [-i-] Etereshop controller software N01
+Info|00:00:543> [-i-] Made by etereshop development team
+Info|00:00:547> [-i-] www.etereshop.com
+Info|00:00:550> [-i-] R8v5.22a
+Info|00:00:553> [-i-] Map Converter update
+Info|00:00:557> [-i-] Feb 27 2021 00:25:33
+Info|00:01:135> [-i-] Radio configuration got sucessfully
+Info|00:01:157> [-i-] 
+Info|00:01:159> [-i-] <-----log----->
+Info|00:01:162> [-i-] // Log files configuration
+Info|00:01:166> [-i-] log.enable=true;              // Allows logging, disabling slightly increases perfomance
+Info|00:01:169> [-i-] log.serial=false;             // Enables serial port logging, disabled automatically if port on hardware request
+Info|00:01:173> [-i-] log.debug=false;              // Adds debug messages to log
+Info|00:01:176> [-i-] log.info=true;                // Outputs parameters and initializion state
+Info|00:01:180> [-i-] log.realtime=false;           // Logging each action, can decrease SDcard lifetime
+Info|00:01:183> [-i-] log.clear=true;               // Start with empty log file on every load
+Info|00:01:186> [-i-] 
+Info|00:01:190> [-i-] <-----led----->
+Info|00:01:193> [-i-] // Led configuration
+Info|00:01:197> [-i-] led.bright=65%;               // Sets global maximum brightness, can have 0->255 or 0%->100% values
+Info|00:01:201> [-i-] led.1.count=510;              // Led count for strip
+Info|00:01:204> [-i-] led.2.count=510;              // Led count for strip
+Info|00:01:207> [-i-] led.3.count=0;                // Led count for strip
+Info|00:01:211> [-i-] led.4.count=0;                // Led count for strip
+Info|00:01:214> [-i-] led.5.count=0;                // Led count for strip
+Info|00:01:217> [-i-] led.6.count=0;                // Led count for strip
+Info|00:01:221> [-i-] led.7.count=0;                // Led count for strip
+Info|00:01:224> [-i-] led.1.pin=5;                  // Led strip pin id
+Info|00:01:227> [-i-] led.2.pin=4;                  // Led strip pin id
+Info|00:01:230> [-i-] led.3.pin=0;                  // Led strip pin id
+Info|00:01:234> [-i-] led.4.pin=2;                  // Led strip pin id
+Info|00:01:237> [-i-] led.5.pin=10;                 // Led strip pin id
+Info|00:01:240> [-i-] led.6.pin=15;                 // Led strip pin id
+Info|00:01:244> [-i-] led.7.pin=3;                  // Led strip pin id
+Info|00:01:247> [-i-] led.type=WS;                  // Chooses one of supported led types ( WS / SK / PL / WS_CHIP )
+Info|00:01:250> [-i-] led.order=default;            // Defines led color order (RGB / GRB / ... )
+Info|00:01:254> [-i-] led.optimize=true;            // Allows automatically decrease led count for strips to minimal values to increase perfomance
+Info|00:01:257> [-i-] led.t1=0;                     // This is service parameter for led's, set to 0 to keep defaults
+Info|00:01:260> [-i-] led.t0=0;                     // This is service parameter for led's, set to 0 to keep defaults
+Info|00:01:264> [-i-] led.pd=0;                     // This is service parameter for led's, set to 0 to keep defaults
+Info|00:01:267> [-i-] led.mbrt=255;                 // This is service parameter for led's, set to 0 to keep defaults
+Info|00:01:270> [-i-] 
+Info|00:01:273> [-i-] <-----play----->
+Info|00:01:277> [-i-] // Controller playing configration
+Info|00:01:280> [-i-] play.default=Manual;          // Set's default playmode on launch you can also use numbers
+Info|00:01:283> [-i-] play.art.reader=direct;       // Art-net reader type [direct / buffered]
+Info|00:01:287> [-i-] play.art.autoshow=90;         // auto show time (if not full frame got)
+Info|00:01:290> [-i-] play.art.ignoresame=true;     // Allows skipping same frame on recieve
+Info|00:01:293> [-i-] play.autostart=false;         // automatically uses Action Switch on power ON
+Info|00:01:296> [-i-] play.blockOnRecieve=0;        // on recieve data, actions from buttons and others will be blocked for ms, set 0 to disable
+Info|00:01:299> [-i-] play.skips=0;                 // allow skiping frames to keep timing
+Info|00:01:303> [-i-] play.speed=100%;              // auto show time (if not full frame got)
+Info|00:01:306> [-i-] play.test.interval=500;       // map change interval
+Info|00:01:309> [-i-] play.preffered=0;             // Sets preffered reader configuration
+Info|00:01:312> [-i-] 
+Info|00:01:315> [-i-] <-----button----->
+Info|00:01:319> [-i-] // Button work configration
+Info|00:01:322> [-i-] TYPE<ANALOG_LOW,ANALOG_TOP>(PIN,PIN_MODE,SHOULD_INVERT)[ACTION_MAIN,TIME_TO_ACTION_ADV ACTION_ADV];
+Info|00:01:325> [-i-] button.1=analog<0,200>(17,none,no invert)[Switch 1, 1500 Reset 0];// button configuration shortcut
+Info|00:01:329> [-i-] button.2=analog<200,700>(17,none,no invert)[Switch -1, 1500 Reset 0];// button configuration shortcut
+Info|00:01:332> [-i-] button.count=2;               // Define button count
+Info|00:01:335> [-i-] button.disable=false;         // Fully disables buttons
+Info|00:01:338> [-i-] Before changing default button settings, you can setdefault button configuration and change it by writing button.default=true;
+Info|00:01:342> [-i-] 
+Info|00:01:345> [-i-] <-----uni----->
+Info|00:01:348> [-i-] // Universe layout, and configuration
+Info|00:01:352> [-i-] uni.1 = <
+Info|00:01:355> [-i-] 	[1](0,170)
+Info|00:01:358> [-i-] >
+Info|00:01:362> [-i-] 
+Info|00:01:365> [-i-] uni.2 = <
+Info|00:01:369> [-i-] 	[1](170,170)
+Info|00:01:372> [-i-] >
+Info|00:01:375> [-i-] 
+Info|00:01:379> [-i-] uni.3 = <
+Info|00:01:382> [-i-] 	[1](340,170)
+Info|00:01:385> [-i-] >
+Info|00:01:389> [-i-] 
+Info|00:01:392> [-i-] uni.4 = <
+Info|00:01:396> [-i-] 	[2](0,170)
+Info|00:01:399> [-i-] >
+Info|00:01:403> [-i-] 
+Info|00:01:406> [-i-] uni.5 = <
+Info|00:01:410> [-i-] 	[2](170,170)
+Info|00:01:413> [-i-] >
+Info|00:01:417> [-i-] 
+Info|00:01:420> [-i-] uni.6 = <
+Info|00:01:424> [-i-] 	[2](340,170)
+Info|00:01:427> [-i-] >
+Info|00:01:430> [-i-] 
+Info|00:01:434> [-i-] uni.max=63;                   // Maximal universe that can be configured
+Info|00:01:438> [-i-] uni.pack=6;                   // Universe count in single effect frame
+Info|00:01:441> [-i-] 
+Info|00:01:445> [-i-] <-----radio----->
+Info|00:01:448> [-i-] // Radio work configuration
+Info|00:01:452> [-i-] radio.pattern=input (1);      // Radio controll pattern: disabled (or 0) | input (or 1) | output (or 3) | group (or 4)
+Info|00:01:455> [-i-]   disabled - radio not affect controller work (even when connected)
+Info|00:01:458> [-i-]   input - controller only recieves current effect
+Info|00:01:462> [-i-]   output - controller output's it's effect and playmode state
+Info|00:01:465> [-i-]   group - on state change (like changing effect) controller will send to other controllers new state
+Info|00:01:469> [-i-] radio.pin=16;                 // Set's pin to auto detect radio, change before different pin usage
+Info|00:01:472> [-i-] Controller detected radio module, you can perform configuration using parameters below
+Info|00:01:476> [-i-] radio.force=false;            // Force radio usage, even if controller can't autodetect it
+Info|00:01:479> [-i-] radio.baudrate=9600;          // radio baudrate (only radio with same baud rate can work with each other) 1200 | 2400 | 4800 | 9600 | 19200 | 38400 | 57600 | 115200
+Info|00:01:483> [-i-] radio.power=8;                // radio power from 0 to 8
+Info|00:01:486> [-i-] radio.channel=1;              // radio channel (only radio on same channel can work together) from 0 to 127
+Info|00:01:490> [-i-] radio.fuse=3;                 // radio fuse mode from 1 to 4, only radio on same fuse can work with each other
+Info|00:01:493> [-i-] // You can revert any changes on radio and restore factory radio setup using radio.default=1;
+Info|00:01:497> [-i-] radio.sendEach=70;            // Time between radio frames
+Info|00:01:500> [-i-] radio.version=0;              // Radio work protocol version [0, 1]
+Info|00:01:503> [-i-] radio.v1.bits=4;              // Address bits in incoming or outcomming packet [0-7]
+Info|00:01:507> [-i-] radio.v1.address=0;           // Current device address
+Info|00:01:510> [-i-] radio.v1.reset=0;             // Reset value on send or recieve
+Info|00:01:515> [-i-] radio.v1.broadcast=-1;        // Broadcast address set -1 to disable
+Info|00:01:518> [-i-] radio.v1.output=;             // output address [addr,addr,addr] for output and group modes
+Info|00:01:521> [-i-] 
+Info|00:01:524> [-i-] <-----wifi----->
+Info|00:01:528> [-i-] // Wifi module configuration
+Info|00:01:531> [-i-] wifi.ip=192.168.4.99;         // Controller IP address in network
+Info|00:01:535> [-i-] wifi.subnet=255.255.255.0;    // Network subnet configuration
+Info|00:01:538> [-i-] wifi.gateway=192.168.4.1;     // Gateway IP address in network (must be in same subnet with controller ip)
+Info|00:01:542> [-i-] wifi.ssid=ETERE-NETWORK;      // Network SSID (AP name)
+Info|00:01:545> [-i-] wifi.password=Secured4897;    // Network password (AP passoword)
+Info|00:01:548> [-i-] wifi.mode=AP (2);             // Wifi work mode OFF(0) / STA(1) / AP(2)
+Info|00:01:552> [-i-] wifi.change=true;             // Allow auto-change AP name if it already set
+Info|00:01:555> [-i-] wifi.web=false;               // You can use Web page during controller normal work
+Info|00:01:559> [-i-] 
+Info|00:01:562> [-i-] <-----device----->
+Info|00:01:566> [-i-] // External devices configuration
+Info|00:01:569> [-i-] device.size=0;                // Device count
+Info|00:01:573> [-i-] device.DEVICE_ID=DEVICE_TYPE;
+Info|00:01:576> [-i-] 
+Info|00:01:580> [-i-] <-----update----->
+Info|00:01:583> [-i-] // update state
+Info|00:01:586> [-i-] update.set="PARAMETER", DEVICE.ID.FIELD, MIN_STATE, MAX_STATE;
+Info|00:01:590> [-i-] 
+Info|00:01:593> [-i-] <-----now----->
+Info|00:01:597> [-i-] // Script commands (do not use in config.txt)
+Info|00:01:601> [-i-] now.effect=blackout;          // [NUMBER] allows switching to next or previous effect
+Info|00:01:604> [-i-] now.effect.id=-1;             // [NUMBER] allows switching to effect by id
+Info|00:01:608> [-i-] now.mode=End;                 // [MODE_NAME] allows switching to special mode
+Info|00:01:611> [-i-] now.action=ACTION;            // allows performing actions
+Info|00:01:615> [-i-] now.script=FILE_NAME;         // allows reading external file as script
+Info|00:01:618> [-i-] now.out=PARAMETER_NAME;       // allows outputting parameters to Log
+Info|00:01:621> [-i-] now.reinit_leds=true;         // allows restarting leds to change configuration
+Info|00:01:625> [-i-] 
+Info|00:01:628> [-i-] 1   [1]  S1.txt
+Info|00:01:632> [-i-] 2   [2]  S2.txt
+Info|00:01:635> [-i-] 3   [3]  S3.txt
+Info|00:01:639> [-i-] 4   [4]  S4.txt
+Info|00:01:642> [-i-] 5   [5]  S5.txt
+Info|00:01:646> [-i-] 6   [6]  S6.txt
+Info|00:01:649> [-i-] 7   [7]  S7.txt
+Info|00:01:653> [-i-] 8   [8]  S8.txt
+Info|00:01:656> [-i-] 9   [9]  S9.txt
+Info|00:01:660> [-i-] 10  [10] S10.txt
+Info|00:01:663> [-i-] 11  [11] S11.txt
+Info|00:01:667> [-i-] 12  [12] S12.txt
+Info|00:01:670> [-i-] 13  [13] S13.txt
+Info|00:01:673> [-i-] 14  [14] S14.txt
+Info|00:01:677> [-i-] 15  [15] S15.txt
+Info|00:01:680> [-i-] 16  [16] S16.txt
+Info|00:01:684> [-i-] 17  [17] S17.txt
+Info|00:01:687> [-i-] 18  [18] S18.txt
+Info|00:01:691> [-i-] 19  [19] S19.txt
+Info|00:01:694> [-i-] 20  [20] S20.txt
+Info|00:01:698> [-i-] 
+Info|00:02:175> [-i-] Led show for 1020 leds took [15.748] ms
+Info|00:02:178> [-i-] Setting maximal perfomance mode by reading 30 frames
+Info|00:02:216> [-i-] Frame size: 2.1019 kb
+Info|00:02:219> [-i-] Direct reading time 33[30 frames]: [1.10] ms per frame or 2722.834 kb/s
+Info|00:02:257> [-i-] Buffer reading time 35[30 frames]: [1.16] ms per frame or 2567.243 kb/s
+Info|00:02:260> [-i-] Using direct reading mode
+Info|00:02:263> [-i-] 
+Info|00:02:267> [-i-] List of modes:
+Info|00:02:270> [-i-] 0  >Manual     | available
+Info|00:02:275> [-i-] 1  >Playlist   | not available (show.txt not found)
+Info|00:02:279> [-i-] 2  >Auto       | not available (auto.txt not defined)
+Info|00:02:282> [-i-] 3  >Test       | available
+Info|00:02:285> [-i-] 4  >Art-Net    | available
+Info|00:02:288> [-i-] 5  >Switch     | available
+Info|00:02:308> [-i-] 
+Info|00:02:311> [-i-] Initialization finished!
